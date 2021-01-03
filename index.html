@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Chetana Ramaiyer</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Scaffold - v2.0.0
+  * Template URL: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex">
+        <div class="logo mr-auto">
+          <ul>
+            <li><width ="100%;"><img src="assets/img/curlyhair.png"></a> </li>
+            <li><h1 style="font-size:100%;"><a href="index.html"><span>Chetana Ramaiyer</span></a></h1></li>
+          </ul>
+        </div>
+
+      </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div> <p><br></p> <p><br></p> </div>
+        <div class="section-title" data-aos="fade-up">
+          <h1>Face Morphing<br></h1>
+          <h5>Chetana Ramaiyer</h5>
+          <br></br>
+          <br></br>
+
+          <div class="section-image" data-aos="fade-up">
+              <div class="section-image-col" data-aos="fade-up">
+                  <img src="data/joey.jpg" class="img-fluid" alt="" align="center">
+                  <figcaption> Joey from Friends </figcaption>
+              </div>
+
+              <div class="section-image-col" data-aos="fade-up">
+                  <img src="data/nick.jpg" class="img-fluid" alt="" align="center">
+                  <figcaption> Nick from New Girl</figcaption>
+                  <p><br></p>
+              </div>
+              <div class="section-image-col" data-aos="fade-up">
+                  <img src="output/nick_joey.gif" alt="description of gif" width = 350px/>
+
+                  <figcaption>Face morphing from Nick to Joey</figcaption>
+                  <p><br></p>
+              </div>
+          </div>
+          <br></br>
+          <div class="section-image" data-aos="fade-up">
+              <div class="section-image-col" data-aos="fade-up">
+                  <img src="data/george_small.jpg" class="img-fluid" alt="" align="center">
+                  <figcaption> George Clooney </figcaption>
+              </div>
+
+              <div class="section-image-col" data-aos="fade-up">
+                  <img src="data/david.jpg" class="img-fluid" alt="" align="center">
+                  <figcaption> David Schwimmer</figcaption>
+                  <p><br></p>
+              </div>
+              <div class="section-image-col" data-aos="fade-up">
+                  <img src="output/goerge_ross.gif" alt="description of gif" width = 350px/>
+
+                  <figcaption>Face morphing from George Clooney to David Schwimmer</figcaption>
+                  <p><br></p>
+              </div>
+          </div>
+          <br></br>
+          <div class="section-image" data-aos="fade-up">
+              <div class="section-image-col" data-aos="fade-up">
+                  <img src="data/image6.jpg" class="img-fluid" alt="" align="center">
+                  <figcaption> Richard Liu</figcaption>
+              </div>
+
+              <div class="section-image-col" data-aos="fade-up">
+                  <img src="data/chetanaramaiyer.jpg" class="img-fluid" alt="" align="center">
+                  <figcaption> Chetana Ramaiyer </figcaption>
+                  <p><br></p>
+              </div>
+              <div class="section-image-col" data-aos="fade-up">
+                  <img src="output/rich_chet.gif" alt="description of gif" />
+
+                  <figcaption>Face morphing from Chetana(Me!) to Richard </figcaption>
+                  <p><br></p>
+              </div>
+          </div>
+          <br></br>
+          <h3>Overview</h3>
+        </div>
+
+        <div class="overview" data-aos="fade-up">
+            <p>This is one of my favorite projects I've ever worked on. Here, I used image warping to morph one or more images into another. I produced a "morph" animation of someone else's face into my face, computed the mean of a population of faces and extrapolated from a population mean to create a caricature of myself.</p>
+            <p>I transformed different images and create morphings between them. I learned how to use affine transformation, triangulation, and color interpolation to average, warp, and morph images.</p>
+        </div>
+
+        <br></br>
+        <div class="section-title" data-aos="fade-up">
+             <h3>Defining Correspondences</h3>
+        </div>
+
+        <div class="overview" data-aos="fade-up">
+          <h4>Selecting the points:</h4>
+          <br></br>
+          <p>The very first step was to define points that you will be “matching” in a sense across the two images you are trying to morph. This part is very tedious as you must pick the same number of points in the same order and locations across the two images. These points are the reference points for the rest of the entire morphing process because I use these points to triangulate, which is then used to average and compute a midway face. </p>
+          <p> The points that I marked are all prominent features of the face that are used as a mapping from one image to the next. For example, I'm attempting to match David Schwimmer's eyes to George Clooney's eyes.</p>
+           <img src="assets/img/filler.png" alt="description of gif" width = 150px align=center;/>
+          <img src="assets/img/pointpicking.png" alt="description of gif" width = 350px align=center;/>
+          <img src="assets/img/outline.jpg" class="img-fluid" alt="" width="350px"align="center">=
+          <br></br>
+          <p> Because this process was so tedious, I drew out a diagram as a reference while I picked the points to ensure that I was consistent across the two images (this is shown above on the right). I selected 58 points in each image and used the ginput function to select my correspondence points on each image. The image on the left above shows what appears while using the point selection ginput function.</p>
+
+         </div>
+        <br></br>
+        <div class="section-image" data-aos="fade-up">
+            <h4>Creating the triangulation:</h4>
+            <br></br>
+        </div>
+        <p>The next step is to use the selected points to create a “triangulation.”Wikipedia defines Delaunay triangulation to be, “for a given set P of discrete points in a plane is a triangulation DT(P) such that no point in P is inside the circumcircle of any triangle in DT(P).”  I can see this in the image below as the triangles generated from the selected points are all empty (they contain no other triangle within it). I used the Delaunay triangulation function to compute the triangulation on each triangle. </p>
+
+        <p> In simpler terms, Delaunay triangulation is a triangular mesh that is applied over the selected ponts. The triangular mesh gives us triangle-to-triangle “matching” between the two images.</p>
+        <div class="section-image" data-aos="fade-up"><
+            <div class="section-image-col" data-aos="fade-up">
+                <img src="assets/img/george_tri.png" class="img-fluid" alt="" width = 300px;>
+                <figcaption>George's triangulation</figcaption>
+            </div>
+            <div class="section-image-col" data-aos="fade-up">
+                <img src="assets/img/mean_george_tri.png" class="img-fluid" alt=""  width = 300px;>
+                <figcaption>Average triangulation projected on George</figcaption>
+                <p><br></p>
+            </div>
+
+            <div class="section-image-col" data-aos="fade-up">
+                <img src="assets/img/ross_tri.png" class="img-fluid" alt=""  width = 300px;>
+                <figcaption>David's triangulation</figcaption>
+                <p><br></p>
+            </div>
+            <div class="section-image-col" data-aos="fade-up">
+                <img src="assets/img/mean_ross_tri.png" class="img-fluid" alt=""  width = 300px;>
+                <figcaption>Average triangulation projected on Ross</figcaption>
+                <p><br></p>
+            </div>
+
+        </div>
+
+
+        <br></br>
+        <div class="section-title" data-aos="fade-up">
+             <h3>Computing the "Mid-way Face":</h3>
+             <br></br>
+             <p> Before creating the full morphing gif, I wanted to create the midway image to see what the blend of the two faces would look like. The first step is to compute the average of the two images by averaging the points in the two images. The second step is to warp both of the images to match that “average” image. For example, Ross’s chin is a little pointier than George’s. So, we want to warp Ross’s face to match the average, which will be flatter. </p>
+             <br></br>
+            <p>In order to warp the image to the average, we use the process of affine transformation. I use the inverse of the affine transformation matrix T that maps the source image to the midway image. This tells us which points in the source image we are warping and performs bilinear interpolation on those selected points in order to find the nearest pixel value (In my case, I simply rounded to the nearest integer). By using the inverse affine matrix from the source to the dest helps us because we don’t have to worry about the scenario where the image is blank. If you mapped from the source to a blank image, that could create a lot of holes since pixel values at locations that don’t land on any pixel coordinates can be obtained from the source image by rounding to the nearest pixel.</p>
+        </div>
+
+        <div class="section-image" data-aos="fade-up">
+            <div class="section-image-col" data-aos="fade-up">
+                <h6>George's original face and his face warped the average triangulation:</h6>
+                <img src="assets/img/filler.png" alt="description of gif" width = 250px align=center;/>
+                <img src="output/george_warp.jpg" class="img-fluid" alt="" width = 600px;>
+            </div>
+        </div>
+        <div class="section-image" data-aos="fade-up">
+            <div class="section-image-col" data-aos="fade-up">
+                <h6>David's original face and his face warped the average triangulation:</h6>
+                <img src="assets/img/filler.png" alt="description of gif" width = 250px align=center;/>
+                <img src="output/ross_warp.jpg" class="img-fluid" alt=""  width = 600px;>
+
+            </div>
+        </div>
+        <div class="section-image" data-aos="fade-up">
+            <div class="section-image-col" data-aos="fade-up">
+
+                <img src="assets/img/filler.png" alt="description of gif" width = 250px align=center;/>
+                <img src="output/stack_morph.jpg" class="img-fluid" alt=""  width = 600px;>
+
+            </div>
+        </div>
+        <div class="section-title" data-aos="fade-up">
+             <h3>Cross Dissolving:</h3>
+             <br></br>
+             <p> The last step after warping the images is to create the midway face image by simply averaging the two warped images. All this requires is taking the average of the pixels in the two warped images. Here is the result: </p>
+        </div>
+        <div class="section-image" data-aos="fade-up">
+            <div class="section-image-col" data-aos="fade-up">
+                <img src="assets/img/filler.png" alt="description of gif" width = 350px align=center;/>
+                <img src="output/midway_george_david.jpg" class="img-fluid" alt=""  width = 400px;>
+                <p><br></p>
+            </div>
+        </div>
+
+        <br></br>
+        <div class="section-title" data-aos="fade-up">
+             <h3>The Morph Sequence: </h3>
+             <p> Now I can create the dynamic gif of the morph from George's to Ross's face. Unlike the previous part, we want to create a weighted average of images and repeatedly warp the images to that weighted average. </p>
+                <br></br>
+                 <p>weighted avg image = (1- t) * (George) + t * (Ross)</p>
+                 <br></br>
+                 <p>We change the value at which we are weighting the average at every time step (increasing from 0 to 1). This essentially means that when the morph starts with George's image, the parameter for George's image is 1 and the parameter for Ross's image is 0. However, as the morph continues, the parameter will increment slowly and finally end on Ross's face (where his parameter now equals 1 and George's equals 0).</p>
+             <br></br>
+             <p> I created 25 different midway images, each with a different warp factor.
+                 I compiled these images together into the morphing animations below. I also used this same increasing pattern for the cross-dissolve (the function that puts the images together).</p>
+        </div>
+
+        <div class="section-image" data-aos="fade-up">
+            <div class="section-image-col" data-aos="fade-up">
+                <img src="assets/img/filler.png" alt="description of gif" width = 350px align=center;/>
+                <p><br></p>
+            </div>
+            <div class="section-image-col" data-aos="fade-up">
+                <img src="output/goerge_ross.gif" alt="description of gif" width = 350px align=center;/>
+                <figcaption>Face morphing from George Clooney to David Schwimmer</figcaption>
+                <p><br></p>
+            </div>
+            <div class="section-image-col" data-aos="fade-up">
+                <img src="assets/img/filler.png" alt="description of gif" width = 350px align=center;/>
+                <p><br></p>
+            </div>
+        </div>
+    </section><!-- End Team Section -->
+    <section id="teamtwo" class="teamtwo">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                 <h3>The "Mean face" of a population:</h3>
+            </div>
+            <p>Using the Danes dataset of a population of people's faces, I computed an "average danish women's face". Using the points they selected for their project, I computed the average face using the code I previously wrote. (Essentially, all we are doing is averaging all the warped images of smiling females from this dataset). Below, I've shown each woman and their face after it's been warped to the average. After computing the average face, I combined each of the original images into the shape of the average face."
+
+
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="output/morphed_pop.jpg" alt="description of gif" width = 600px align=center;/>
+                    <figcaption>Average face of a danish women</figcaption>
+                    <p><br></p>
+                </div>
+            </div>
+
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="data/08-2f.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="output/warped_one.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+            </div>
+
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="data/12-2f.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="output/warped_two.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+            </div>
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="data/14-2f.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="output/warped_three.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+            </div>
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="data/15-2f.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="output/warped_four.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+            </div>
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="data/22-2f.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="output/warped_five.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+            </div>
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="data/30-2f.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="output/warped_six.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+            </div>
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="data/35-2f.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="output/warped_seven.jpg" alt="description of gif" width = 350px align=center;/>
+                    <p><br></p>
+                </div>
+            </div>
+            <br></br>
+
+        </div>
+        </section><!-- End Team Section -->
+
+
+    <section id="team" class="team">
+        <div class="container">
+            <h4>My face morphed with the average population face:</h4>
+            <br></br>
+            <p>I morphed my face with the average population face that I computed above. It doesn't create a very nice result because my features are very different than that of danish women. Also, the picture of me has a very different background than me.</p>
+
+
+            <p><br></p>
+
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <h6>My face warped into avg danish women: </h6>
+                    <img src="assets/img/filler.png" alt="description of gif" width = 200px align=center;/>
+                    <img src="output/chetana_warp.jpg" alt="description of gif" width = 500px />
+
+                </div>
+            </div>
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <h6>Avg danish women warped into my face: </h6>
+                    <img src="assets/img/filler.png" alt="description of gif" width = 200px align=center;/>
+                    <img src="output/pop_warp.jpg" alt="description of gif" width = 500px />
+
+                </div>
+            </div>
+            <div class="section-image" data-aos="fade-up">
+            <div class="section-image-col" data-aos="fade-up">
+                <h6>Blend of my face and average danish woman: </h6>
+                <img src="assets/img/filler.png" alt="description of gif" width = 200px align=center;/>
+                <img src="output/midway_face_morph_chet.jpg" alt="description of gif" width = 500px />
+
+                <p><br></p>
+            </div>
+            </div>
+
+            <div class="section-image" data-aos="fade-up">
+            <div class="section-image-col" data-aos="fade-up">
+                <h6>Morphing of my face and average danish woman: </h6>
+                <img src="assets/img/filler.png" alt="description of gif" width = 200px align=center;/>
+                <img src="output/chetana-pop.gif" alt="description of gif" width = 500px />
+
+                <p><br></p>
+            </div>
+            </div>
+
+
+            <br></br>
+            <h5>Caricature of my face by extrapolating from the population mean:</h5>
+            <p> I created a caricature of my face using the average face of the danish woman. To intesify my features, I increased my warp factor to > 1. </p>
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="assets/img/filler.png" alt="description of gif" width = 200px align=center;/>
+                    <img src="output/warped_chetana_car.jpg" alt="description of gif" width = 500px />
+                    <p><br></p>
+                </div>
+            </div>
+
+
+
+            <div class="container">
+            <br></br>
+            <div class="section-title" data-aos="fade-up">
+                 <h3>Morphing chain of our entire class: </h3>
+            </div>
+            <p> Our class worked together to create a chain of students that morphed their faces into each other sequentially. I each submitted a portrait style photo with a white background and were each in charge of using our code to morph our face into the next person in the chain. </p>
+            <p> I morphed my face into my classmate, Richard Liu's face. </p>
+            <br></br>
+            <div class="section-image" data-aos="fade-up">
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="data/image6.jpg" class="img-fluid" alt="" align="center">
+                    <figcaption> Richard Liu</figcaption>
+                </div>
+
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="data/chetanaramaiyer.jpg" class="img-fluid" alt="" align="center">
+                    <figcaption> Chetana Ramaiyer </figcaption>
+                    <p><br></p>
+                </div>
+                <div class="section-image-col" data-aos="fade-up">
+                    <img src="output/chetana_rich.gif" alt="description of gif" width = 300px/>
+
+                    <figcaption>Face morphing from Richard to Chetana(Me!) </figcaption>
+                    <p><br></p>
+                </div>
+            </div>
+            <div class="section-title" data-aos="fade-up">
+                 <h3>Here is our entire class video: </h3>
+            </div>
+            <iframe width="1020" height="630" src="https://www.youtube.com/embed/vCFfYSlLVwk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+    </section><!-- End Team Section -->
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top"><i class="bx bxs-up-arrow-alt"></i></a>
+
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+    <footer id="footer">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Scaffold</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/scaffold-bootstrap-metro-style-template/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+
+    </footer><!-- End Footer -->
+
+</body>
+
+</html>
